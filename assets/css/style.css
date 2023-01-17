@@ -1,20 +1,25 @@
+/*CSS for the main body.*/
 body {
     margin: 5px;
     padding: 5px;
     min-height: 100%;
     background-color: rgb(91, 121, 149);
+    
 }
 
+
+/*CSS For the logo.*/        
 .logo {
-    height: 140px;
-    width: 140px;
+    max-height: 140px;
+    max-width: 140px;
     margin-left: 0px;
     margin-top: 20px;
     padding-left: 200px;
 
+
 }
 
-
+/*CSS for the heading text on the top bar.*/
 .heading {
     @font-face 
             font-family: Roboto;
@@ -30,6 +35,70 @@ body {
 }
 
 
+
+
+/*Progress bar CSS for Main div.*/
+.prog-div-flex {
+    display: flex;
+        align-items: center
+}
+
+/*Progress bar CSS for P tag on Raised amount.*/
+.prog-p-1 {
+    flex: 1;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 50px;
+        font-weight: 400;
+        color: #ffffff;
+}
+
+/*Progress bar CSS for actual progress bar.*/
+#progress-bar {
+    flex: 0.5;
+    height: 50px;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+/*Compatiblity with Chromium Browsers or Webkit Browsers.*/
+progress::-webkit-progress-value {
+    background: #D64758;
+    border-radius: 10px;
+    
+}
+
+progress::-webkit-progress-bar {
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+
+/*Compatiblity with Firefox Browsers.*/
+progress::-moz-progress-bar {
+    background: #D64758;
+    border-radius: 10px;
+}
+
+/*Compatiblity with Microsoft Browsers.*/
+progress::-ms-fill {
+    background-color: #D64758;
+}
+
+
+/*Progress bar CSS for P tag on Goal amount.*/
+.prog-p-2 {
+    flex: 1;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 50px;
+        font-weight: 400;
+        border-radius: 0px;
+        color: #ffffff;
+}
+
+ 
+/*CSS for the cashapp image*/
 .cashapp {
     width: 251px;
     height: 271px;
@@ -39,12 +108,12 @@ body {
     padding: 50px;
 }
 
-
+/*Just a spacer.*/
 .space {
     padding: 50px;
 }
 
-
+/*CSS For the fotter.*/
 .footer {
     font-family: Roboto, sans-serif;
     font-size: 20px;
@@ -54,7 +123,13 @@ body {
     text-align: center;
 }
 
+/*To Remove the blue line from links.*/
 a {
     text-decoration: none;
     color: inherit;
 }
+
+
+
+
+
